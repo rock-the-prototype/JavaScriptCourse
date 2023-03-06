@@ -16,17 +16,23 @@ Entwurfsmuster lösen Probleme, indem sie bewährte Lösungen für wiederkehrend
 So löst ein Entwurfsmuster ein Problem:
 Im Folgenden werden einige Möglichkeiten aufgezeigt, wie Entwurfsmuster Probleme lösen:
 
-1. Abstraktion: Entwurfsmuster bieten eine hohe Abstraktionsebene, die es Entwicklern ermöglicht, sich auf die wichtigsten Entwurfsaspekte eines Systems zu konzentrieren, ohne sich in Implementierungsdetails zu verzetteln.
+### 1. Abstraktion: 
+Entwurfsmuster bieten eine hohe Abstraktionsebene, die es Entwicklern ermöglicht, sich auf die wichtigsten Entwurfsaspekte eines Systems zu konzentrieren, ohne sich in Implementierungsdetails zu verzetteln.
 
-2. Wiederverwendbarkeit: Entwurfsmuster bieten wiederverwendbare Lösungen für gängige Probleme, wodurch sich der Zeit- und Arbeitsaufwand für den Entwurf und die Implementierung eines Systems verringert.
+### 2. Wiederverwendbarkeit: 
+Entwurfsmuster bieten wiederverwendbare Lösungen für gängige Probleme, wodurch sich der Zeit- und Arbeitsaufwand für den Entwurf und die Implementierung eines Systems verringert.
 
-2. Flexibilität: Entwurfsmuster erleichtern die Änderung und Erweiterung eines Systems, indem sie eine Reihe von gut definierten Schnittstellen und Implementierungsrichtlinien bereitstellen.
+### 2. Flexibilität: 
+Entwurfsmuster erleichtern die Änderung und Erweiterung eines Systems, indem sie eine Reihe von gut definierten Schnittstellen und Implementierungsrichtlinien bereitstellen.
 
-3. Wartbarkeit: Entwurfsmuster verbessern die Wartbarkeit eines Systems, indem sie die Modularität fördern und die Kopplung zwischen den Komponenten verringern.
+### 3. Wartbarkeit: 
+Entwurfsmuster verbessern die Wartbarkeit eines Systems, indem sie die Modularität fördern und die Kopplung zwischen den Komponenten verringern.
 
-4. Kommunikation: Entwurfsmuster bieten ein gemeinsames Vokabular und eine Reihe von Best Practices für Entwickler, um effektiv zu kommunizieren und zusammenzuarbeiten.
+### 4. Kommunikation: 
+Entwurfsmuster bieten ein gemeinsames Vokabular und eine Reihe von Best Practices für Entwickler, um effektiv zu kommunizieren und zusammenzuarbeiten.
 
-5. Leistung: Entwurfsmuster können die Leistung eines Systems verbessern, indem sie optimierte Lösungen für häufige Probleme bieten.
+### 5. Leistung: 
+Entwurfsmuster können die Leistung eines Systems verbessern, indem sie optimierte Lösungen für häufige Probleme bieten.
 
 Insgesamt helfen Entwurfsmuster Entwicklern bei der Lösung von Problemen, indem sie eine Reihe gut definierter, wiederverwendbarer Lösungen bereitstellen, die sich in realen Szenarien bewährt haben. Sie erleichtern die Entwicklung qualitativ hochwertiger, wartbarer und erweiterbarer Softwaresysteme, die den Anforderungen von Benutzern und Interessengruppen gerecht werden.
 
@@ -44,7 +50,7 @@ Mehr Informationen zu diesem Design Pattern findest Du **[hier](https://rock-the
 ### Code Beispiel zum Design Pattern
 In der Datei **CommandPattern.js** findest Du eine musterhafte **Implementierung des Command Pattern in JavaScript**.
 
-Im diesem Code-Beispiel werden Klassendefinitionen verwendet, um Objekte zu erstellen, die einen Lichtschalter und Befehle zum Ein- und Ausschalten des Lichts darstellen. Die Klasse Light stellt eine Glühbirne dar, die ein- oder ausgeschaltet werden kann, und die Klasse Command stellt eine Aktion dar, die mit der Glühbirne durchgeführt werden kann. Die Klassen TurnOnCommand und TurnOffCommand sind Unterklassen der Klasse Command, die die spezifischen Aktionen zum Ein- bzw. Ausschalten der Glühbirne implementieren. Die Klasse Switch schließlich stellt den eigentlichen Schalter dar, der die Glühbirne mit den Befehlen verbindet.
+Im diesem **Code-Beispiel** werden _Klassendefinitionen_ verwendet, um _Objekte_ zu erstellen, die einen Lichtschalter und Befehle zum Ein- und Ausschalten des Lichts darstellen. Die Klasse Light stellt eine Glühbirne dar, die ein- oder ausgeschaltet werden kann, und die Klasse Command stellt eine Aktion dar, die mit der Glühbirne durchgeführt werden kann. Die Klassen TurnOnCommand und TurnOffCommand sind Unterklassen der Klasse Command, die die spezifischen Aktionen zum Ein- bzw. Ausschalten der Glühbirne implementieren. Die Klasse Switch schließlich stellt den eigentlichen Schalter dar, der die Glühbirne mit den Befehlen verbindet.
 
 Um den Schalter zu verwenden, erstellt der Client eine _Instanz der Switch-Klasse_ und übergibt ihr ein _Light-Objekt_, ein _TurnOnCommand-Objekt_ und ein _TurnOffCommand-Objekt_. Dann kann der Client die _press-Methode_ des Schalters aufrufen und ihm entweder das _TurnOnCommand-_ oder das _TurnOffCommand-Objekt_ übergeben, je nachdem, welche Aktion er ausführen möchte.
 
