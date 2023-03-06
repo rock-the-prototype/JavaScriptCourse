@@ -42,10 +42,10 @@ Vereinfacht ausgedrückt, ermöglichen **Command Patterns** die Entkopplung von 
 Mehr Informationen zu diesem Design Pattern findest Du **[hier](https://rock-the-prototype.com/software-architektur/command-pattern/)**.
 
 ### Code Beispiel zum Design Pattern
-In der Datei CommandPattern.js findest Du eine musterhafte Implementierung des Command Pattern in JavaScript.
+In der Datei **CommandPattern.js** findest Du eine musterhafte **Implementierung des Command Pattern in JavaScript**.
 
 Im diesem Code-Beispiel werden Klassendefinitionen verwendet, um Objekte zu erstellen, die einen Lichtschalter und Befehle zum Ein- und Ausschalten des Lichts darstellen. Die Klasse Light stellt eine Glühbirne dar, die ein- oder ausgeschaltet werden kann, und die Klasse Command stellt eine Aktion dar, die mit der Glühbirne durchgeführt werden kann. Die Klassen TurnOnCommand und TurnOffCommand sind Unterklassen der Klasse Command, die die spezifischen Aktionen zum Ein- bzw. Ausschalten der Glühbirne implementieren. Die Klasse Switch schließlich stellt den eigentlichen Schalter dar, der die Glühbirne mit den Befehlen verbindet.
 
-Um den Schalter zu verwenden, erstellt der Client eine Instanz der Switch-Klasse und übergibt ihr ein Light-Objekt, ein TurnOnCommand-Objekt und ein TurnOffCommand-Objekt. Dann kann der Client die press-Methode des Schalters aufrufen und ihm entweder das TurnOnCommand- oder das TurnOffCommand-Objekt übergeben, je nachdem, welche Aktion er ausführen möchte.
+Um den Schalter zu verwenden, erstellt der Client eine _Instanz der Switch-Klasse_ und übergibt ihr ein _Light-Objekt_, ein _TurnOnCommand-Objekt_ und ein _TurnOffCommand-Objekt_. Dann kann der Client die _press-Methode_ des Schalters aufrufen und ihm entweder das _TurnOnCommand-_ oder das _TurnOffCommand-Objekt_ übergeben, je nachdem, welche Aktion er ausführen möchte.
 
-Diese Implementierung des Befehlsmusters folgt traditionellen objektorientierten Entwurfsprinzipien wie Vererbung und Kapselung und ist ein gutes Beispiel dafür, wie das Muster auf unkomplizierte und leicht verständliche Weise implementiert werden kann.
+Diese Implementierung des Command Patterns folgt traditionellen **objektorientierten Entwurfsprinzipien** wie **Vererbung** und **Kapselung** und ist ein leicht verständliches und gutes Beispiel dafür, wie das Entwurfsmuster auf unkomplizierte implementiert werden kann.
