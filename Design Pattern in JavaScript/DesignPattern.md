@@ -55,3 +55,18 @@ Im diesem **Code-Beispiel** werden _Klassendefinitionen_ verwendet, um _Objekte_
 Um den Schalter zu verwenden, erstellt der Client eine _Instanz der Switch-Klasse_ und übergibt ihr ein _Light-Objekt_, ein _TurnOnCommand-Objekt_ und ein _TurnOffCommand-Objekt_. Dann kann der Client die _press-Methode_ des Schalters aufrufen und ihm entweder das _TurnOnCommand-_ oder das _TurnOffCommand-Objekt_ übergeben, je nachdem, welche Aktion er ausführen möchte.
 
 Diese Implementierung des Command Patterns folgt traditionellen **objektorientierten Entwurfsprinzipien** wie **Vererbung** und **Kapselung** und ist ein leicht verständliches und gutes Beispiel dafür, wie das Entwurfsmuster auf unkomplizierte implementiert werden kann.
+
+## Factory-Pattern
+
+Das **[Factory Pattern](https://rock-the-prototype.com/software-architektur/factory-pattern/)** ist ein Design Pattern, das ein Interface, also eine Schnittstelle für die Erstellung von Objekten bietet, es aber den Unterklassen überlässt, welche Klasse sie instanziieren.
+
+### Code Beispiel zum Design Pattern
+In der Datei **FactoryPattern.js** findest Du eine musterhafte **Implementierung des Factory Pattern in JavaScript**.
+
+In diesem Beispiel definieren wir eine **Schnittstelle für die Erstellung von Raumobjekten**, die durch die **abstrakte Klasse** _SpaceObject_ repräsentiert wird. Dann definieren wir **zwei konkrete Klassen**, die von der **Factory** erstellt werden: _Stern_ und _Planet_.
+
+Als nächstes definieren wir die Fabrik selbst, die durch die **Klasse** _SpaceObjectFactory_ dargestellt wird. Die Fabrik bietet eine **Methode** _createObject_, die ein **Typargument** entgegennimmt, das bestimmt, welche konkrete Klasse erstellt werden soll. Das **Argument** _extraParams_ ist ein Objekt, das alle zusätzlichen Parameter enthält, die zur Erstellung des Objekts erforderlich sind.
+
+Schließlich erstellen wir mit der Fabrik einige Raumobjekte, indem wir die **Methode** _createObject_ mit den entsprechenden Argumenten aufrufen. Anschließend können wir für jedes Objekt **spezifische Methoden** aufrufen, z. B. _shine_ für einen **Stern** und _orbit_ für einen **Planeten**.
+
+Wenn Du mehr über das Factory Pattern und seine Vorteile erfahren möchtest **[liest Du hier weiter](https://rock-the-prototype.com/software-architektur/factory-pattern/)**.
