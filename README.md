@@ -6,6 +6,13 @@ Du möchtest die **Programmiersprache JavaScript** beherrschen?
 
 **Wir haben den perfekten JavaScript-Einstieg für Dich vorbereitet!** 
 
+- Praxisorientiert ✔
+- Leicht verständlich ✔
+- Vollständig erläutert ✔
+- Umfangreiche Code-Beispiele ✔
+- Prototypisch programmieren lernen ✔
+- Das ist **https://rock-the-prototype.com/**
+
 Wir stellen Dir **praxisorientiert** die **10 wichtigsten JavaScript-Konzepte** vor, die jeder kennen sollte. 
 Zum Abschluss gibt es ein spannendes Code-Quiz zur Übung.
 
@@ -14,7 +21,7 @@ Ideal für Programmier-Anfänger die sich in die Programmiersprache JavaScript e
 
 Fühlst Du Dich von der Komplexität der objektorientierten Programmierung überwältigt? Keine Angst, denn wir haben den perfekten JavaScript-Einstieg für Dich vorbereitet!
 
-Mit jeweils einem **begleitenden Blog-Artikel** auf https://rock-the-prototype.com/blog/ stellen wir Dir praxisorientiert als das vor, was Du wissen musst um mit der JavaScript-Programmierung zu starten.
+Mit jeweils einem **begleitenden Blog-Artikel** auf https://rock-the-prototype.com/blog/ stellen wir Dir praxisorientiert alles vor, was Du wissen musst um mit der JavaScript-Programmierung zu starten.
 
 Der erste Beitrag sind ["Die 10 wichtigsten JavaScript-Konzepte vor, die jeder Programmieranfänger kennen sollte."](https://rock-the-prototype.com/programmieren-lernen/10-unverzichtbare-javascript-konzepte-die-jeder-programmier-anfaenger-kennen-sollte/ ):
 
@@ -29,3 +36,7 @@ Dabei kannst Du Dich jederzeit aktiv einbringen und gemeinsam mit uns **Software
 
 Wir bieten Dir eine **leicht verständliche Erläuterung** dieser **wichtigen Programmier-Konzepte**. Praxisnah zeigen wir Dir die einzelnen Entwurfsmuster anhand von leicht nachvollziehbaren Code-Beispielen in JavaScript. 
 Du findest also im Ordner Design Pattern in JavaScript die **Codebeispiele für jedes Entwurfsmuster** und die dazugehörige **Erklärung in der Markdown Datei**. :-) 
+
+# Command Pattern ✔
+
+# Factory Pattern ✔
