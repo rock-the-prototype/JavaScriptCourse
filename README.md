@@ -1,6 +1,6 @@
 # JavaScriptCourse
 
-# Eine leicht verständliche Einführung in die JavaScript Programmierung.
+## Eine leicht verständliche Einführung in die JavaScript Programmierung.
 
 Du möchtest die **Programmiersprache JavaScript** beherrschen? 
 
@@ -22,3 +22,10 @@ Von **Datentypen in JavaScript**, **JavaScript-Operatoren** über **Kontrollflus
 
 Das Ziel von **[Rock the Prototype](https://rock-the-prototype.com/)** ist es **Software Prototyping** erlernbar und erlebbar machen.
 Dabei kannst Du Dich jederzeit aktiv einbringen und gemeinsam mit uns **Software prototypisch entwickeln**.
+
+## Design Pattern in JavaScript
+
+**Design Pattern** sind **wertvolle Entwurfsmuster** für ein **gutes Software Design**.
+
+Wir bieten Dir eine **leicht verständliche Erläuterung** dieser **wichtigen Programmier-Konzepte**. Praxisnah zeigen wir Dir die einzelnen Entwurfsmuster anhand von leicht nachvollziehbaren Code-Beispielen in JavaScript. 
+Du findest also im Ordner Design Pattern in JavaScript die **Codebeispiele für jedes Entwurfsmuster** und die dazugehörige **Erklärung in der Markdown Datei**. :-) 
