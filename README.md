@@ -37,6 +37,6 @@ Dabei kannst Du Dich jederzeit aktiv einbringen und gemeinsam mit uns **Software
 Wir bieten Dir eine **leicht verständliche Erläuterung** dieser **wichtigen Programmier-Konzepte**. Praxisnah zeigen wir Dir die einzelnen Entwurfsmuster anhand von leicht nachvollziehbaren Code-Beispielen in JavaScript. 
 Du findest also im Ordner Design Pattern in JavaScript die **Codebeispiele für jedes Entwurfsmuster** und die dazugehörige **Erklärung in der Markdown Datei**. :-) 
 
-# Command Pattern ✔
+# Command Pattern
 
-# Factory Pattern ✔
+# Factory Pattern 
