@@ -77,3 +77,11 @@ Das **[Prototype Pattern](https://rock-the-prototype.com/software-architektur/pr
 
 ### Code Beispiel zum Prototype Pattern
 In der Datei **PrototypePattern.js** findest Du eine musterhafte **Implementierung des Prototype-Pattern in JavaScript**.
+
+Unsere **Codebeispiel eines space-igen Prototype-Patterns** implementiert das Prototyp-Entwurfsmuster, indem wir eine Reihe von Prototyp-Objekten für jeden Teil des Raumschiffs - Motor, Waffe und Hülle - erstellen. Jedes Prototype-Objekt hat eine Reihe von Standardeigenschaften und Verhaltensweisen, die seinen Typ und seine Fähigkeiten definieren.
+
+Um eine neue Instanz eines Teils zu erstellen, verwenden wir die Methode _Object.create()_, um das entsprechende Prototypeobjekt zu klonen und seine Eigenschaften nach Bedarf anzupassen. So können wir neue Instanzen von Teilen mit einzigartigen Konfigurationen erstellen, ohne jedes Mal neuen Code schreiben zu müssen.
+
+Sobald wir die neuen Instanzen der Teile erstellt haben, kombinieren wir sie zu einem neuen Raumschiffobjekt mit einem eigenen **Set von Methoden** zum Fliegen, Schießen und Reparieren.
+
+Durch die Verwendung des Prototyp-Musters haben wir eine flexible und wiederverwendbare Lösung für die Erstellung neuer Raumschiffe mit einzigartigen Konfigurationen geschaffen. Statt jedes Mal neuen Code zu schreiben, klonen wir einfach die Prototype-Objekte und passen ihre Eigenschaften nach Bedarf an, was uns Zeit und Mühe spart.
