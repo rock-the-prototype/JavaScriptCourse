@@ -70,3 +70,10 @@ Als nächstes definieren wir die Fabrik selbst, die durch die **Klasse** _SpaceO
 Schließlich erstellen wir mit der Fabrik einige Raumobjekte, indem wir die **Methode** _createObject_ mit den entsprechenden Argumenten aufrufen. Anschließend können wir für jedes Objekt **spezifische Methoden** aufrufen, z. B. _shine_ für einen **Stern** und _orbit_ für einen **Planeten**.
 
 Wenn Du mehr über das Factory Pattern und seine Vorteile erfahren möchtest **[liest Du hier weiter](https://rock-the-prototype.com/software-architektur/factory-pattern/)**.
+
+## Prototype Pattern
+
+Das **[Prototype Pattern](https://rock-the-prototype.com/software-architektur/prototype-pattern/)** ist ein **Design Pattern** das die **Erstellung neuer Objekte durch Klonen** eines bestehenden Objekts ermöglicht, das als **Prototype** dient. Mit anderen Worten, das Entwurfsmuster beinhaltet die Erstellung eines neuen Objekts durch Kopieren eines bestehenden Objekts, anstatt es von Grund auf neu zu erstellen.
+
+### Code Beispiel zum Prototype Pattern
+In der Datei **PrototypePattern.js** findest Du eine musterhafte **Implementierung des Prototype-Pattern in JavaScript**.
