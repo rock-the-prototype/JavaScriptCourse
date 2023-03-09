@@ -42,3 +42,5 @@ Du findest also im Ordner Design Pattern in JavaScript die **Codebeispiele für 
 # Factory Pattern 
 
 # Prototype Pattern 
+
+# Adapter Pattern 
