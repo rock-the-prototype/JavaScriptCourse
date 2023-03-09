@@ -85,3 +85,20 @@ Um eine neue Instanz eines Teils zu erstellen, verwenden wir die Methode _Object
 Sobald wir die neuen Instanzen der Teile erstellt haben, kombinieren wir sie zu einem neuen Raumschiffobjekt mit einem eigenen **Set von Methoden** zum Fliegen, Schießen und Reparieren.
 
 Durch die Verwendung des Prototyp-Musters haben wir eine flexible und wiederverwendbare Lösung für die Erstellung neuer Raumschiffe mit einzigartigen Konfigurationen geschaffen. Statt jedes Mal neuen Code zu schreiben, klonen wir einfach die Prototype-Objekte und passen ihre Eigenschaften nach Bedarf an, was uns Zeit und Mühe spart.
+
+## Adapter Pattern
+
+Das **[Adapter Pattern](https://rock-the-prototype.com/software-architektur/adapter-pattern/)** ist ein **strukturelles Design Pattern** für Software, das es Objekten mit inkompatiblen Schnittstellen ermöglicht, zusammenzuarbeiten. Es wandelt die Schnittstelle einer Klasse in eine andere Schnittstelle um, so dass diese API dann die funktionalen Anforderungen erfüllt und leicht wartbar ist, ohne den Quellcode der ursprünglichen Klasse zu ändern.
+
+Diese Eigenschaften des Adapter Pattern sind immer dann sehr nützlich, wenn eine anzupassende API nicht im Einflussbereich der zu ändernder Software liegt.
+
+### Code Beispiel zum Adapter Pattern
+In der Datei **AdapterPattern.js** findest Du eine musterhafte **Implementierung des Adapter-Pattern in JavaScript**.
+
+In diesem Java-Script Codebeispiel haben wir eine Adaptee-Klasse namens ThirdPartyLibrary, die eine Methode printText hat, die Text auf der Konsole ausgibt. Wir möchten diese Klasse mit einer Zielschnittstelle namens TextPrinter verwenden, die über eine Methode displayText verfügt, die ebenfalls Text auf der Konsole ausgibt.
+
+Damit diese beiden Klassen zusammenarbeiten können, erstellen wir eine Adapterklasse namens TextPrinterAdapter, welche die Schnittstelle TextPrinter implementiert und eine Instanz der Klasse ThirdPartyLibrary als Konstruktorparameter erhält. In der displayText-Methode des Adapters rufen wir die printText-Methode der ThirdPartyLibrary-Instanz auf, um das gleiche Ergebnis zu erzielen.
+
+Schließlich erstellen wir im Client-Code eine Instanz der ThirdPartyLibrary-Klasse und eine Instanz der TextPrinterAdapter-Klasse und übergeben die ThirdPartyLibrary-Instanz als Parameter an den Konstruktor des Adapters.
+
+Dann rufen wir die displayText-Methode des Adapters mit unserem Text auf, und dieser druckt den Text mit der printText-Methode der ThirdPartyLibrary-Instanz auf die Konsole.
