@@ -37,12 +37,16 @@ Dabei kannst Du Dich jederzeit aktiv einbringen und gemeinsam mit uns **Software
 Wir bieten Dir eine **leicht verständliche Erläuterung** dieser **wichtigen Programmier-Konzepte**. Praxisnah zeigen wir Dir die einzelnen Entwurfsmuster anhand von leicht nachvollziehbaren Code-Beispielen in JavaScript. 
 Du findest also im Ordner Design Pattern in JavaScript die **Codebeispiele für jedes Entwurfsmuster** und die dazugehörige **Erklärung in der Markdown Datei**. :-) 
 
-# Command Pattern
+# Creational Pattern – Kreative Entwurfsmuster
 
-# Factory Pattern 
+## Command Pattern
 
-# Prototype Pattern 
+## Factory Pattern 
 
-# Adapter Pattern 
+## Prototype Pattern
 
-# Bridge Pattern 
+# Structural Pattern – Entwurfsmuster zur Strukturierung von Software-Komponenten
+
+## Adapter Pattern 
+
+## Bridge Pattern 
