@@ -102,3 +102,21 @@ Damit diese beiden Klassen zusammenarbeiten können, erstellen wir eine Adapterk
 Schließlich erstellen wir im Client-Code eine Instanz der ThirdPartyLibrary-Klasse und eine Instanz der TextPrinterAdapter-Klasse und übergeben die ThirdPartyLibrary-Instanz als Parameter an den Konstruktor des Adapters.
 
 Dann rufen wir die displayText-Methode des Adapters mit unserem Text auf, und dieser druckt den Text mit der printText-Methode der ThirdPartyLibrary-Instanz auf die Konsole.
+
+## Bridge Pattern
+
+Das **[Bridge-Pattern](https://rock-the-prototype.com/software-architektur/bridge-pattern/)** ist ein **Design Pattern für Software**, das dazu dient, eine **Abstraktion von Deiner Implementierung** zu **entkoppeln**, so dass beide Softwarebestandteile unabhängig voneinander änderbar sind, ohne sich gegenseitig zu beeinflussen.
+
+### Code Beispiel zum Bridge Pattern
+In der Datei **BridgePattern.js** findest Du eine musterhafte **Implementierung des Bridge-Pattern in JavaScript**.
+
+In diesem JavaScript-Codebeispiel haben wir eine Abstraktion namens GUIComponent, die eine generische GUI-Komponente darstellt. Der GUIComponent-Konstruktor nimmt ein Plattformobjekt auf, das zum Rendern der Komponente auf der entsprechenden Plattform verwendet wird.
+
+Wir haben auch zwei Implementierungen namens WindowsGUI und MacOSGUI, die den plattformspezifischen Code für das Rendern der GUI-Komponente darstellen. Beide Klassen implementieren eine Render-Methode, die die entsprechende Meldung für die jeweilige Plattform ausgibt.
+
+Im Abschnitt über die Verwendung erstellen wir zwei Instanzen von GUIComponent, eine für Windows und eine für MacOS, und übergeben für jede das entsprechende Plattformobjekt. Anschließend rufen wir die Render-Methode für jedes GUIComponent-Objekt auf, die das richtige Plattformobjekt verwendet, um die Komponente auf der entsprechenden Plattform zu rendern.
+
+Dieses Praxisbeispiel zeigt, wie wir das Bridge-Muster verwenden können, um die Abstraktion der GUI-Komponente von ihrer plattformspezifischen Implementierung zu trennen. So können wir in Zukunft problemlos Unterstützung für neue Plattformen hinzufügen, ohne den vorhandenen Code für die GUI-Komponente ändern zu müssen.
+
+
+
