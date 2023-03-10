@@ -44,3 +44,5 @@ Du findest also im Ordner Design Pattern in JavaScript die **Codebeispiele für 
 # Prototype Pattern 
 
 # Adapter Pattern 
+
+# Bridge Pattern 
