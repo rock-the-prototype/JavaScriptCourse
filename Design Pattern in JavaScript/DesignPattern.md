@@ -118,5 +118,18 @@ Im Abschnitt über die Verwendung erstellen wir zwei Instanzen von GUIComponent,
 
 Dieses Praxisbeispiel zeigt, wie wir das Bridge-Muster verwenden können, um die Abstraktion der GUI-Komponente von ihrer plattformspezifischen Implementierung zu trennen. So können wir in Zukunft problemlos Unterstützung für neue Plattformen hinzufügen, ohne den vorhandenen Code für die GUI-Komponente ändern zu müssen.
 
+## Strategy Pattern
 
+Das [**Strategy Pattern**](https://rock-the-prototype.com/software-architektur/strategy-pattern/) ist ein **Entwurfsmuster für Software** und ermöglicht Dir , eine **Familie von Algorithmen zu definieren**, die einzelnen **Algorithmen zu kapseln** und sie austauschbar zu machen. Mit diesem Entwurfsmuster kannst Du **zur Laufzeit einen Algorithmus auswählen**, ohne dem Client die Details der Algorithmusimplementierung offen zu legen.
+
+### Code Beispiel zum Strategy Pattern
+In der Datei **StrategyPattern.js** findest Du eine musterhafte **Implementierung des Strategy-Pattern in JavaScript**.
+
+In diesem JavaScript-Code-Beispiel definieren wir eine _FightingStrategy-Schnittstelle_ und erstellen **konkrete Strategieklassen** für die Kampfstile der einzelnen Völker: _SwordStrategy_ für Elfen, _AxeStrategy_ für Zwerge und _MagicStrategy_ für Magier.
+
+Wir definieren auch eine Charakterklasse, die ein _FightingStrategy-Objekt_ als Parameter annimmt und die Angriffsmethode an sie delegiert.
+
+Wir erstellen Instanzen von Charakteren mit der entsprechenden Strategie für jede Rasse und rufen dann ihre Angriffsmethode auf. Schließlich ändern wir die Strategie für den Elfencharakter und rufen seine Angriffsmethode erneut auf, um zu demonstrieren, wie wir zur Laufzeit zwischen den Strategien wechseln können.
+
+Beachte, dass dies nur ein vereinfachtes Beispiel ist. In einem echten Spiel wäre eine deutlich komplexere Logik und zusätzliche Klassen beteiligt.
 
