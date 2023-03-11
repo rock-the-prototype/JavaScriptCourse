@@ -50,3 +50,7 @@ Du findest also im Ordner Design Pattern in JavaScript die **Codebeispiele für 
 ## Adapter Pattern 
 
 ## Bridge Pattern 
+
+# Behavioral Pattern – Verhaltensorientierte Entwurfsmuster für die Softwareentwicklung 
+
+## Strategy Pattern
