@@ -3,7 +3,7 @@ function handleFileSelect(event) {
     const reader = new FileReader();
     reader.readAsBinaryString(file);
     reader.onload = function() {
-        const binaryString = reader.result;
+        const binaryString = reader.result.replace(/\s/g, ''); // entferne alle Leerzeichen
         const asciiString = convertBinaryToAscii(binaryString);
         const unicodeString = convertBinaryToUnicode(binaryString);
         // Gib die Ergebnisse aus oder tue etwas anderes damit
@@ -45,6 +45,12 @@ function convertBinaryToUnicode(binaryString) {
             unicodeString += String.fromCharCode(charCode);
         }
     }
+
+    // Wenn das erste Zeichen der Unicode-Zeichenkette das BOM ist, entferne es
+    if (unicodeString.charCodeAt(0) === 65279) {
+        unicodeString = unicodeString.slice(1);
+    }
+
     return unicodeString;
 }
 
