@@ -31,13 +31,19 @@ function convertBinaryToAscii(binaryString) {
 function convertBinaryToUnicode(binaryString) {
     let unicodeString = '';
     // Schleife durch die Binärzeichenkette
-    for (let i = 0; i < binaryString.length; i += 16) {
-        // Teile die Binärzeichenkette in 16-Bit-Chunks auf
-        const chunk = binaryString.substr(i, 16);
-        // Wandele jeden 16-Bit-Chunk in Unicode-Code um
-        const charCode = parseInt(chunk, 2);
-        // Konvertiere Unicode-Code in Zeichen und füge es zur Ausgabezeichenkette hinzu
-        unicodeString += String.fromCharCode(charCode);
+    for (let i = 0; i < binaryString.length; i += 8) {
+        // Wenn das nächste Zeichen ein 16-Bit-Zeichen ist, verarbeite es als solches
+        if (binaryString.charAt(i) === '1' && binaryString.charAt(i+1) === '0') {
+            const chunk = binaryString.substr(i, 16);
+            const charCode = parseInt(chunk, 2);
+            unicodeString += String.fromCharCode(charCode);
+            i += 8; // überspringe das zweite Byte des 16-Bit-Zeichens
+        } else {
+            // sonst verarbeite das Zeichen als 8-Bit-Zeichen
+            const chunk = binaryString.substr(i, 8);
+            const charCode = parseInt(chunk, 2);
+            unicodeString += String.fromCharCode(charCode);
+        }
     }
     return unicodeString;
 }
