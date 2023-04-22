@@ -9,6 +9,8 @@ function handleFileSelect(event) {
         // Gib die Ergebnisse aus oder tue etwas anderes damit
         console.log('ASCII: ' + asciiString);
         console.log('Unicode: ' + unicodeString);
+        const output = document.getElementById('output');
+        output.innerHTML = `ASCII: ${asciiString}<br>Unicode: ${unicodeString}`;
     };
 }
 

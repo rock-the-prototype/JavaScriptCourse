@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Upload</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>File Converter</title>
 </head>
 <body>
-    <h1>Datei-Upload</h1>
-    <form>
-        <label for="fileInput">Wähle eine Datei aus:</label>
-        <input type="file" id="fileInput" onchange="handleFileSelect()">
-    </form>
-
+<form id="fileForm">
+    <input type="file" id="fileInput">
+    <button type="submit" id="uploadButton">Upload</button>
+</form>
+<div id="output"></div>
+<script src="main.js"></script>
 </body>
 </html>
