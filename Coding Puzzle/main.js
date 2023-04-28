@@ -7,12 +7,14 @@ function handleFileSelect(event) {
         const asciiString = convertBinaryToAscii(binaryString);
         const unicodeString = convertBinaryToUnicode(binaryString, 'UTF-8'); // Umwandlung in UTF-8
         const isoString = convertBinaryToUnicode(binaryString, 'ISO-8859-1'); // Umwandlung in ISO-8859-1
+
         // Gib die Ergebnisse aus oder tue etwas anderes damit
         console.log('ASCII: ' + asciiString);
         console.log('Unicode: ' + unicodeString);
         console.log('ISO-8859-1: ' + isoString);
+
         const output = document.getElementById('output');
-        output.innerHTML = `ASCII: ${asciiString}<br>Unicode: ${unicodeString}<br>ISO-8859-1: ${isoString}`;
+        output.innerHTML = `ASCII: ${decodeURIComponent(escape(asciiString))}<br>Unicode: ${decodeURIComponent(escape(unicodeString))}<br>ISO-8859-1: ${decodeURIComponent(escape(isoString))}`;
     };
 }
 
