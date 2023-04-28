@@ -30,9 +30,6 @@ function htmlEncode(str) {
     });
 }
 
-
-document.getElementById('fileInput').addEventListener('change', handleFileSelect);
-
 function convertBinaryToUnicode(binaryString, charset) {
     let unicodeString = '';
     let byte1, byte2, byte3, byte4, charCode;

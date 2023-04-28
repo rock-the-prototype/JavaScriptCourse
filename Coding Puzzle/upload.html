@@ -3,12 +3,15 @@
 <head>
     <meta charset="ISO-8859-1">
     <title>File Converter</title>
+    <script src="https://cdn.jsdelivr.net/npm/iconv-lite@0.6.4/dist/iconv-lite.min.js"></script>
 </head>
 <body>
 <form id="fileForm">
     <input type="file" id="fileInput">
     <button type="submit" id="uploadButton">Upload</button>
 </form>
+<div>1) Wähle eine zu decodierende Datei aus.</div>
+<div>2) Nach "Upload" erscheint hier die codierte Ausgabe:</div>
 <div id="output"></div>
 <script src="main.js"></script>
 </body>
