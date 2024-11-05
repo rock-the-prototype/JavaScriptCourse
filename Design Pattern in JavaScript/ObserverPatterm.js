@@ -51,7 +51,7 @@ class WeatherStation extends Subject {
     }
 }
 
-// Nutzung des Observer Patterns
+// Nutzung unseres Observer Patterns
 const weatherStation = new WeatherStation();
 
 // Erstellen von Observern
