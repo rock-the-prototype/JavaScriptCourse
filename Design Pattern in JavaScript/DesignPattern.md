@@ -36,6 +36,40 @@ Entwurfsmuster können die Leistung eines Systems verbessern, indem sie optimier
 
 Insgesamt helfen Entwurfsmuster Entwicklern bei der Lösung von Problemen, indem sie eine Reihe gut definierter, wiederverwendbarer Lösungen bereitstellen, die sich in realen Szenarien bewährt haben. Sie erleichtern die Entwicklung qualitativ hochwertiger, wartbarer und erweiterbarer Softwaresysteme, die den Anforderungen von Benutzern und Interessengruppen gerecht werden.
 
+## Adapter Pattern
+
+Das **[Adapter Pattern](https://rock-the-prototype.com/software-architektur/adapter-pattern/)** ist ein **strukturelles Design Pattern** für Software, das es Objekten mit inkompatiblen Schnittstellen ermöglicht, zusammenzuarbeiten. Es wandelt die Schnittstelle einer Klasse in eine andere Schnittstelle um, so dass diese API dann die funktionalen Anforderungen erfüllt und leicht wartbar ist, ohne den Quellcode der ursprünglichen Klasse zu ändern.
+
+Diese Eigenschaften des Adapter Pattern sind immer dann sehr nützlich, wenn eine anzupassende API nicht im Einflussbereich der zu ändernder Software liegt.
+
+### Code Beispiel zum Adapter Pattern
+In der Datei **AdapterPattern.js** findest Du eine musterhafte **Implementierung des Adapter-Pattern in JavaScript**.
+
+In diesem Java-Script Codebeispiel haben wir eine Adaptee-Klasse namens ThirdPartyLibrary, die eine Methode printText hat, die Text auf der Konsole ausgibt. Wir möchten diese Klasse mit einer Zielschnittstelle namens TextPrinter verwenden, die über eine Methode displayText verfügt, die ebenfalls Text auf der Konsole ausgibt.
+
+Damit diese beiden Klassen zusammenarbeiten können, erstellen wir eine Adapterklasse namens TextPrinterAdapter, welche die Schnittstelle TextPrinter implementiert und eine Instanz der Klasse ThirdPartyLibrary als Konstruktorparameter erhält. In der displayText-Methode des Adapters rufen wir die printText-Methode der ThirdPartyLibrary-Instanz auf, um das gleiche Ergebnis zu erzielen.
+
+Schließlich erstellen wir im Client-Code eine Instanz der ThirdPartyLibrary-Klasse und eine Instanz der TextPrinterAdapter-Klasse und übergeben die ThirdPartyLibrary-Instanz als Parameter an den Konstruktor des Adapters.
+
+Dann rufen wir die displayText-Methode des Adapters mit unserem Text auf, und dieser druckt den Text mit der printText-Methode der ThirdPartyLibrary-Instanz auf die Konsole.
+
+
+## Bridge Pattern
+
+Das **[Bridge-Pattern](https://rock-the-prototype.com/software-architektur/bridge-pattern/)** ist ein **Design Pattern für Software**, das dazu dient, eine **Abstraktion von Deiner Implementierung** zu **entkoppeln**, so dass beide Softwarebestandteile unabhängig voneinander änderbar sind, ohne sich gegenseitig zu beeinflussen.
+
+### Code Beispiel zum Bridge Pattern
+In der Datei **BridgePattern.js** findest Du eine musterhafte **Implementierung des Bridge-Pattern in JavaScript**.
+
+In diesem JavaScript-Codebeispiel haben wir eine Abstraktion namens GUIComponent, die eine generische GUI-Komponente darstellt. Der GUIComponent-Konstruktor nimmt ein Plattformobjekt auf, das zum Rendern der Komponente auf der entsprechenden Plattform verwendet wird.
+
+Wir haben auch zwei Implementierungen namens WindowsGUI und MacOSGUI, die den plattformspezifischen Code für das Rendern der GUI-Komponente darstellen. Beide Klassen implementieren eine Render-Methode, die die entsprechende Meldung für die jeweilige Plattform ausgibt.
+
+Im Abschnitt über die Verwendung erstellen wir zwei Instanzen von GUIComponent, eine für Windows und eine für MacOS, und übergeben für jede das entsprechende Plattformobjekt. Anschließend rufen wir die Render-Methode für jedes GUIComponent-Objekt auf, die das richtige Plattformobjekt verwendet, um die Komponente auf der entsprechenden Plattform zu rendern.
+
+Dieses Praxisbeispiel zeigt, wie wir das Bridge-Muster verwenden können, um die Abstraktion der GUI-Komponente von ihrer plattformspezifischen Implementierung zu trennen. So können wir in Zukunft problemlos Unterstützung für neue Plattformen hinzufügen, ohne den vorhandenen Code für die GUI-Komponente ändern zu müssen.
+
+
 ## Command Pattern
 
 Das **[Command Pattern](https://rock-the-prototype.com/software-architektur/command-pattern/)** ist ein Design Pattern für die Softwareentwicklung und fällt in die Kategorie der verhaltensorientierten Entwurfsmuster.
@@ -86,37 +120,6 @@ Sobald wir die neuen Instanzen der Teile erstellt haben, kombinieren wir sie zu 
 
 Durch die Verwendung des Prototyp-Musters haben wir eine flexible und wiederverwendbare Lösung für die Erstellung neuer Raumschiffe mit einzigartigen Konfigurationen geschaffen. Statt jedes Mal neuen Code zu schreiben, klonen wir einfach die Prototype-Objekte und passen ihre Eigenschaften nach Bedarf an, was uns Zeit und Mühe spart.
 
-## Adapter Pattern
-
-Das **[Adapter Pattern](https://rock-the-prototype.com/software-architektur/adapter-pattern/)** ist ein **strukturelles Design Pattern** für Software, das es Objekten mit inkompatiblen Schnittstellen ermöglicht, zusammenzuarbeiten. Es wandelt die Schnittstelle einer Klasse in eine andere Schnittstelle um, so dass diese API dann die funktionalen Anforderungen erfüllt und leicht wartbar ist, ohne den Quellcode der ursprünglichen Klasse zu ändern.
-
-Diese Eigenschaften des Adapter Pattern sind immer dann sehr nützlich, wenn eine anzupassende API nicht im Einflussbereich der zu ändernder Software liegt.
-
-### Code Beispiel zum Adapter Pattern
-In der Datei **AdapterPattern.js** findest Du eine musterhafte **Implementierung des Adapter-Pattern in JavaScript**.
-
-In diesem Java-Script Codebeispiel haben wir eine Adaptee-Klasse namens ThirdPartyLibrary, die eine Methode printText hat, die Text auf der Konsole ausgibt. Wir möchten diese Klasse mit einer Zielschnittstelle namens TextPrinter verwenden, die über eine Methode displayText verfügt, die ebenfalls Text auf der Konsole ausgibt.
-
-Damit diese beiden Klassen zusammenarbeiten können, erstellen wir eine Adapterklasse namens TextPrinterAdapter, welche die Schnittstelle TextPrinter implementiert und eine Instanz der Klasse ThirdPartyLibrary als Konstruktorparameter erhält. In der displayText-Methode des Adapters rufen wir die printText-Methode der ThirdPartyLibrary-Instanz auf, um das gleiche Ergebnis zu erzielen.
-
-Schließlich erstellen wir im Client-Code eine Instanz der ThirdPartyLibrary-Klasse und eine Instanz der TextPrinterAdapter-Klasse und übergeben die ThirdPartyLibrary-Instanz als Parameter an den Konstruktor des Adapters.
-
-Dann rufen wir die displayText-Methode des Adapters mit unserem Text auf, und dieser druckt den Text mit der printText-Methode der ThirdPartyLibrary-Instanz auf die Konsole.
-
-## Bridge Pattern
-
-Das **[Bridge-Pattern](https://rock-the-prototype.com/software-architektur/bridge-pattern/)** ist ein **Design Pattern für Software**, das dazu dient, eine **Abstraktion von Deiner Implementierung** zu **entkoppeln**, so dass beide Softwarebestandteile unabhängig voneinander änderbar sind, ohne sich gegenseitig zu beeinflussen.
-
-### Code Beispiel zum Bridge Pattern
-In der Datei **BridgePattern.js** findest Du eine musterhafte **Implementierung des Bridge-Pattern in JavaScript**.
-
-In diesem JavaScript-Codebeispiel haben wir eine Abstraktion namens GUIComponent, die eine generische GUI-Komponente darstellt. Der GUIComponent-Konstruktor nimmt ein Plattformobjekt auf, das zum Rendern der Komponente auf der entsprechenden Plattform verwendet wird.
-
-Wir haben auch zwei Implementierungen namens WindowsGUI und MacOSGUI, die den plattformspezifischen Code für das Rendern der GUI-Komponente darstellen. Beide Klassen implementieren eine Render-Methode, die die entsprechende Meldung für die jeweilige Plattform ausgibt.
-
-Im Abschnitt über die Verwendung erstellen wir zwei Instanzen von GUIComponent, eine für Windows und eine für MacOS, und übergeben für jede das entsprechende Plattformobjekt. Anschließend rufen wir die Render-Methode für jedes GUIComponent-Objekt auf, die das richtige Plattformobjekt verwendet, um die Komponente auf der entsprechenden Plattform zu rendern.
-
-Dieses Praxisbeispiel zeigt, wie wir das Bridge-Muster verwenden können, um die Abstraktion der GUI-Komponente von ihrer plattformspezifischen Implementierung zu trennen. So können wir in Zukunft problemlos Unterstützung für neue Plattformen hinzufügen, ohne den vorhandenen Code für die GUI-Komponente ändern zu müssen.
 
 ## Strategy Pattern
 
