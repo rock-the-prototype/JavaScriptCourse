@@ -108,7 +108,7 @@ Wenn Du mehr über das Factory Pattern und seine Vorteile erfahren möchtest **[
 Das **[Observer Pattern](https://rock-the-prototype.com/softwareentwicklung/observer-pattern-einfach-erklaert-anwendungsbeispiele-vorteile/)** ist ein **Design Pattern**, das die **Benachrichtigung mehrerer Objekte** ermöglicht, sobald sich der Zustand eines zentralen Objekts (dem sogenannten Subjekt) ändert. Mit anderen Worten: Das Observer Pattern erlaubt es, dass Änderungen an einem Subjekt automatisch an alle abhängigen Observer weitergegeben werden, ohne dass diese eng miteinander gekoppelt sind.
 
 ### Code Beispiel zum Observer Pattern
-In der Datei **ObserverPattern.js** findest Du eine musterhafte **Implementierung des Observer Patterns in JavaScript**.
+In der Datei **ObserverPattern.js** findest Du eine beispielhafte **Implementierung des Observer Patterns in JavaScript**.
 
 Unser **Codebeispiel eines praktischen Observer Patterns** implementiert das Entwurfsmuster, indem wir ein Wettersystem als Subjekt und mehrere Anzeigen als Observer erstellen. Das Wettersystem überwacht Änderungen der Temperatur und benachrichtigt alle angemeldeten Observer, wenn sich die Temperatur ändert.
 
