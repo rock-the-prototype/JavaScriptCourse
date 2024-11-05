@@ -105,6 +105,20 @@ Schließlich erstellen wir mit der Fabrik einige Raumobjekte, indem wir die **Me
 
 Wenn Du mehr über das Factory Pattern und seine Vorteile erfahren möchtest **[liest Du hier weiter](https://rock-the-prototype.com/software-architektur/factory-pattern/)**.
 
+Das **[Observer Pattern](https://rock-the-prototype.com/softwareentwicklung/observer-pattern-einfach-erklaert-anwendungsbeispiele-vorteile/)** ist ein **Design Pattern**, das die **Benachrichtigung mehrerer Objekte** ermöglicht, sobald sich der Zustand eines zentralen Objekts (dem sogenannten Subjekt) ändert. Mit anderen Worten: Das Observer Pattern erlaubt es, dass Änderungen an einem Subjekt automatisch an alle abhängigen Observer weitergegeben werden, ohne dass diese eng miteinander gekoppelt sind.
+
+### Code Beispiel zum Observer Pattern
+In der Datei **ObserverPattern.js** findest Du eine musterhafte **Implementierung des Observer Patterns in JavaScript**.
+
+Unser **Codebeispiel eines praktischen Observer Patterns** implementiert das Entwurfsmuster, indem wir ein Wettersystem als Subjekt und mehrere Anzeigen als Observer erstellen. Das Wettersystem überwacht Änderungen der Temperatur und benachrichtigt alle angemeldeten Observer, wenn sich die Temperatur ändert.
+
+Um neue Observer hinzuzufügen, verwenden wir die Methode `attach()`, die die Observer registriert. Die Methode `detach()` entfernt Observer, wenn sie keine Benachrichtigungen mehr erhalten sollen. Jedes Mal, wenn die Temperatur im Subjekt geändert wird, ruft es `notify()` auf, wodurch alle Observer ihre spezifische `update()`-Methode ausführen, um die neue Temperatur zu verarbeiten.
+
+Sobald die neuen Observer ihre Informationen erhalten haben, führen sie individuelle Aktionen aus, z. B. das Aktualisieren einer Anzeige oder das Protokollieren der Änderungen. Das Observer Pattern bietet uns so eine flexible und wiederverwendbare Lösung zur Synchronisierung mehrerer Komponenten mit einem zentralen Status. Anstatt jedes Mal neuen Code zu schreiben, melden sich die Observer einfach beim Subjekt an und reagieren automatisch auf dessen Zustandsänderungen – das spart Zeit und Aufwand.
+
+Wenn Du mehr über das Observer Pattern und seine Vorteile erfahren möchtest, **[liest Du hier weiter](https://rock-the-prototype.com/softwareentwicklung/observer-pattern-einfach-erklaert-anwendungsbeispiele-vorteile/)**.
+
+
 ## Prototype Pattern
 
 Das **[Prototype Pattern](https://rock-the-prototype.com/software-architektur/prototype-pattern/)** ist ein **Design Pattern** das die **Erstellung neuer Objekte durch Klonen** eines bestehenden Objekts ermöglicht, das als **Prototype** dient. Mit anderen Worten, das Entwurfsmuster beinhaltet die Erstellung eines neuen Objekts durch Kopieren eines bestehenden Objekts, anstatt es von Grund auf neu zu erstellen.
