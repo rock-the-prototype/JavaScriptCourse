@@ -41,6 +41,12 @@ Du findest also im Ordner Design Pattern in JavaScript die **Codebeispiele für 
 
 ## Command Pattern
 
+## Facade Pattern 
+
+Ein *[**Facade Pattern*](https://rock-the-prototype.com/programmieren-lernen/facade-pattern/) ist eine Schicht oder Komponente, die den Zugriff auf ein komplexes internes System über einen vereinfachten, klaren Einstiegspunkt ermöglicht.
+
+Das Facade Pattern reduziert die nach außen sichtbare Komplexität eines Systems, indem es eine verständliche Schnittstelle vor ein komplexes Subsystem stellt.
+
 ## Factory Pattern 
 
 ## Prototype Pattern
